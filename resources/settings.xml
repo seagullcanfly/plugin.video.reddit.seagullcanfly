@@ -1,12 +1,42 @@
+<?xml version="1.0"?>
 <settings>
-   <setting id="login_name" type="text" label="30000" default=""/>
-   <setting id="login_pass" type="text" label="30001" enable="!eq(-1,)" option="hidden" default=""/>
-   <setting id="bitrate" type="enum" lvalues="30005|30006|30007|30008|30009|30010|30011|30012" label="30004" default="7"/>
-   <setting type="sep" />
-   <setting id='continousplay' type ="bool" label="30013" default="false"/>
-   <setting id="relatedmode" type="enum" lvalues="30016|30017" label="30018" default="0"/>
-   <setting type="sep" />
-   <setting id='unpause' type ="bool" label="30014" default="true"/>
-   <setting id="unpausetime" type="enum" label="30015" values="1|2|3|4|5|6|7|8|9|10" default="4"/>
-   <setting id="subreddits" type="text" label="30016" values="documentaries|fullmoviesonyoutube"/>
+    <category label="30020">
+        <setting label="30000" default="" type="text" id="login_name"/>
+        <setting label="30001" default="" type="text" id="login_pass" option="hidden" enable="!eq(-1,)"/>
+        <setting label="30004" default="7" type="enum" id="bitrate" lvalues="30005|30006|30007|30008|30009|30010|30011|30012"/>
+        <setting type="sep"/>
+        <setting label="30013" default="false" type="bool" id="continousplay"/>
+        <setting label="30018" default="0" type="enum" id="relatedmode" lvalues="30016|30017"/>
+        <setting type="sep"/>
+        <setting label="30014" default="true" type="bool" id="unpause"/>
+        <setting label="30015" default="4" type="enum" id="unpausetime" values="1|2|3|4|5|6|7|8|9|10"/>
+</category>
+    <category label="30019">
+        <setting label="30019" default="default" type="text" id="subreddits"/>
+        <setting label="Instructions" type="lsep"/>
+        <setting type="sep"/>
+        <setting label="Enter the exact name of the subreddit." type="lsep"/>
+        <setting label="Separate multiple subreddits by commas (,)." type="lsep"/>
+        <setting label="By default, custom subreddits are listed as 'What's Hot.'" type="lsep"/>
+</category>
+    <category label="Default Subreddits">
+        <setting label="Default Subreddits" default="" type="text" id="default"/>
+        <setting label="K-pop" default="true" type="bool" id="kpop"/>
+        <setting label="Music" default="true" type="bool" id="music"/>
+        <setting label="Music Videos" default="true" type="bool" id="musicvideos"/>
+        <setting label="Listen to This" default="true" type="bool" id="listentothis"/>
+        <setting label="Documentary" default="true" type="bool" id="documentary"/>
+        <setting label="Documentaries" default="true" type="bool" id="documentaries"/>
+        <setting label="Climbing Videos" default="true" type="bool" id="climbingvids"/>
+        <setting label="Artisan" default="true" type="bool" id="artisan"/>
+        <setting label="Artisan Videos" default="true" type="bool" id="artisanvideos"/>
+        <setting label="Obscure Media" default="true" type="bool" id="obscuremedia"/>
+        <setting label="Conspiracy Documentary" default="true" type="bool" id="conspiracydocumentary"/>
+        <setting label="Rocket Launches" default="true" type="bool" id="rocketlaunches"/>
+        <setting label="Science Videos" default="true" type="bool" id="sciencevideos"/>
+        <setting label="Car Crash" default="true" type="bool" id="carcrash"/>
+        <setting label="Derailed" default="true" type="bool" id="derailed"/>
+        <setting label="Police Chases" default="true" type="bool" id="policechases"/>
+        <setting label="Cringe" default="true" type="bool" id="cringe"/>
+    </category>
 </settings>
