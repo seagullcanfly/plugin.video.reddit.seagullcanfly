@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.reddit.seagullcanfly"
-       name="Reddit Videos sc"
+       name="Reddit Videos"
        version="0.1"
        provider-name="seagullcanfly">
   <requires>
